@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BeloDoc - professional skin consultations online - get the best, most effective products for your skincare needs. Signup now!">
+    <title>BeloDoc Skincare - Online Consultations - Signup now!</title>
+
+    <!-- Bootstrap -->
+    <link href="beta/templates/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="beta/templates/css/launch.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="google-site-verification" content="8PbCU4Q79dy39GxWTOOp7tutBpJ9F6ZTcKIYwIih3Q8" />
+  </head>
+  <body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KM8SLT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KM8SLT');</script>
+<!-- End Google Tag Manager -->
+  <div class="launch">
+
+    <div class="jumbotron">
+      <h1 class="logo">BeloDoc Skincare</h1>
+      <p class="soon">Coming Soon</p>
+      <h1 class="launch">Affordable, Convenient, Professional Skin Care Treatment</h1>
+      <p class="launch">Submit pictures and answer a few questions to receive a personalized skin care regimen in under 48 hours. BeloDoc online skincare gets you the best, most effective products for your individual skincare needs. Sign up now to be among the first to try our service.</p>
+      <form role="form" id="email-signup" name="email-signup" method="post" action="email.signup.php">
+          <input class="email" name="email" type="email" id="email" placeholder="  Email address..." required/>
+          <input class="name" name="name" type="name" id="name" placeholder="Full Name..." required/>
+          <input class="submit" type="submit" onclick="validatePage()" />
+      </form>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <a href="doctors.html">For our Doctors</a>
+  </div>
+
+  
+
+
+ <script>
+
+ function validatePage () {
+ 	var email = document.forms["email-signup"]["email"].value;
+  	var name = document.forms["email-signup"]["name"].value;
+
+  	if (email == "") {
+    	alert("Please enter your email!")
+    	return false;
+  	}
+  	else if (name== "") {
+    	alert("Please enter your name!")
+    	return false;
+  	}
+  	else {
+  		return true;
+  	}	
+}
+
+$( "#email-signup" ).submit(function( event ) {
+  if(validatePage) {
+    var allow = 1;
+  }
+  else {
+    var allow = 0;
+  }
+  if (allow == 0) {
+    event.preventDefault();
+  }
+});
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60485321-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+
+    <!--<div class="jumbotron visible-md visibile-lg col-lg-4">
+      <h1 class="launch">Professionally recommended skincare regimens for you!</h1>
+      <p>Sign up now to be among the first to try our service.</p>
+      <form class="subscribe" action="subscribe.php" method="post">
+      <div class="form-group">
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+      </div>
+      <button type="submit" class="btn btn-default">Subscribe Now!</button>
+      </form>
+    </div>  
+
+    <div class="jumbotron jumbotron1 visible-sm col-sm-12">
+      <h1 class="launch">Professionally recommended skincare regimens for you</h1>
+      <p>Sign up now to be among the first to try our service.</p>
+      <form class="subscribe" action="subscribe.php" method="post">
+      <div class="form-group">
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+      </div>
+      <button type="submit" class="btn btn-default">Subscribe Now!</button>
+      </form>
+    </div>
+  
+    <div class="signup visible-xs">
+      <h1 class="launch">Professionally recommended skincare regimens for you</h1>
+      <p>Sign up now to be among the first to try our service.</p>
+      <form class="subscribe" action="subscribe.php" method="post">
+      <div class="form-group">
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+      </div>
+      <button type="submit" class="btn btn-default">Subscribe Now!</button>
+      </form>
+    </div>
+  </div>-->
+
+     <!-- <div id="footer">
+        <div class="container">
+          <p class="footer">Belo Skin Care &copy; 2014</p>
+          <ul class="nav nav-pills pull-right scroll-top">
+            <li><a href="#">Home</a></li>
+            <li><a href="index.html">My Regimen</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  </body>
+</html>

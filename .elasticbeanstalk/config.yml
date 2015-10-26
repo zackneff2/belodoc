@@ -1,0 +1,10 @@
+branch-defaults:
+  Neff:
+    environment: beloSite-env
+global:
+  application_name: belo-site
+  default_ec2_keyname: belo
+  default_platform: 64bit Amazon Linux 2015.03 v2.0.1 running PHP 5.6
+  default_region: us-west-2
+  profile: null
+  sc: git

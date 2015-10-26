@@ -1,0 +1,28 @@
+input#email::-webkit-input-placeholder::before {
+	font-family: fontAwesome; 
+	content:'\f003  '; 
+	color: #f39c12;
+}
+input#email::-moz-placeholder::before {
+	font-family: fontAwesome;
+	content:'\f003  ';
+	color: #f39c12;
+}
+input#email:-ms-placeholder::before {
+	font-family: fontAwesome;
+	content:'\f003  ';
+	color: #f39c12;
+}
+
+div#footer {
+	position: relative;
+	background-color: transparent;
+	text-align: center;
+}
+div#footer a {
+  color: #62e9cf;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 20px;
+}
